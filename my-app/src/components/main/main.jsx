@@ -1,35 +1,10 @@
 import React from 'react'
 import './main.css'
+import AutoPlayMethods from "./carousel";
 
 const Main_prtf = () => {
   return (
     <div className='main_all_son'>
-
-
-      <div className='section1'>
-        <div className='main_left'>
-          <h2>HI, I'M ZYAN! <br /> CREATIVE DESIGNERCODER</h2>
-          <p>I'm a passionate UI/UX designer with a mission to create delightful and intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.</p>
-          <div className='main_left_btn'>
-
-            <button className='dwnload'>Download CV <i class="fa-solid fa-download"></i></button>
-
-            <button className='video'>
-              <div className='video_btn'>
-                <i class="fa-solid fa-play"></i>
-
-              </div>
-              Watch Video    </button>
-          </div>
-
-        </div>
-
-        <div className='main_right'>
-          {/* <img src="https://zyan.vercel.app/images/shapes/banner_shape.png" alt="" /> */}
-          <img src="https://zyan.vercel.app/images/banner_img_1.png" alt="" />
-        </div>
-      </div>
-
       <div className='section2'>
 
         <div className='section2_text'>
@@ -183,7 +158,6 @@ const Main_prtf = () => {
           <input type="text" placeholder='Message' id='message' />
           <button>Submit now</button>
         </div>
-
       </section>
 
       <section className='section5_education'>
@@ -289,140 +263,140 @@ const Main_prtf = () => {
           <p>CLIENTS REVIEW</p>
           <h3>My testomonial</h3>
         </div>
+          <div className="conatinerForSlider">
 
-        <div className='section7_clients_slider'>
-
-        </div>
+          <AutoPlayMethods/>
+          </div>
 
       </section>
 
       <section className='section8_carousel'>
         <div className="logos">
-        <div className="logo_items">
-          <img src="./image/slide1.jpeg" alt="" />
-          <img src="./image/slide2.jpeg" alt="" />
-          <img src="./image/slide3.jpeg" alt="" />
-          <img src="./image/slide4.jpeg" alt="" />
-          <img src="./image/slide5.jpeg" alt="" />
-          <img src="./image/slide1.jpeg" alt="" />
-          <img src="./image/slide2.jpeg" alt="" />
-          <img src="./image/slide3.jpeg" alt="" />
-          <img src="./image/slide4.jpeg" alt="" />
-          <img src="./image/slide5.jpeg" alt="" />
-          <img src="./image/slide1.jpeg" alt="" />
-          <img src="./image/slide2.jpeg" alt="" />
-          <img src="./image/slide3.jpeg" alt="" />
-          <img src="./image/slide4.jpeg" alt="" />
-          <img src="./image/slide5.jpeg" alt="" />
-          <img src="./image/slide1.jpeg" alt="" />
-          <img src="./image/slide2.jpeg" alt="" />
-          <img src="./image/slide3.jpeg" alt="" />
-          <img src="./image/slide4.jpeg" alt="" />
-          <img src="./image/slide5.jpeg" alt="" />
-          <img src="./image/slide1.jpeg" alt="" />
-          <img src="./image/slide2.jpeg" alt="" />
-          <img src="./image/slide3.jpeg" alt="" />
-          <img src="./image/slide4.jpeg" alt="" />
-          <img src="./image/slide5.jpeg" alt="" />
-          <img src="./image/slide1.jpeg" alt="" />
-          <img src="./image/slide2.jpeg" alt="" />
-          <img src="./image/slide3.jpeg" alt="" />
-          <img src="./image/slide4.jpeg" alt="" />
-          <img src="./image/slide5.jpeg" alt="" />
-          <img src="./image/slide1.jpeg" alt="" />
-          <img src="./image/slide2.jpeg" alt="" />
-          <img src="./image/slide3.jpeg" alt="" />
-          <img src="./image/slide4.jpeg" alt="" />
-          <img src="./image/slide5.jpeg" alt="" />
-        </div>
+          <div className="logo_items">
+            <img src="./image/slide1.jpeg" alt="" />
+            <img src="./image/slide2.jpeg" alt="" />
+            <img src="./image/slide3.jpeg" alt="" />
+            <img src="./image/slide4.jpeg" alt="" />
+            <img src="./image/slide5.jpeg" alt="" />
+            <img src="./image/slide1.jpeg" alt="" />
+            <img src="./image/slide2.jpeg" alt="" />
+            <img src="./image/slide3.jpeg" alt="" />
+            <img src="./image/slide4.jpeg" alt="" />
+            <img src="./image/slide5.jpeg" alt="" />
+            <img src="./image/slide1.jpeg" alt="" />
+            <img src="./image/slide2.jpeg" alt="" />
+            <img src="./image/slide3.jpeg" alt="" />
+            <img src="./image/slide4.jpeg" alt="" />
+            <img src="./image/slide5.jpeg" alt="" />
+            <img src="./image/slide1.jpeg" alt="" />
+            <img src="./image/slide2.jpeg" alt="" />
+            <img src="./image/slide3.jpeg" alt="" />
+            <img src="./image/slide4.jpeg" alt="" />
+            <img src="./image/slide5.jpeg" alt="" />
+            <img src="./image/slide1.jpeg" alt="" />
+            <img src="./image/slide2.jpeg" alt="" />
+            <img src="./image/slide3.jpeg" alt="" />
+            <img src="./image/slide4.jpeg" alt="" />
+            <img src="./image/slide5.jpeg" alt="" />
+            <img src="./image/slide1.jpeg" alt="" />
+            <img src="./image/slide2.jpeg" alt="" />
+            <img src="./image/slide3.jpeg" alt="" />
+            <img src="./image/slide4.jpeg" alt="" />
+            <img src="./image/slide5.jpeg" alt="" />
+            <img src="./image/slide1.jpeg" alt="" />
+            <img src="./image/slide2.jpeg" alt="" />
+            <img src="./image/slide3.jpeg" alt="" />
+            <img src="./image/slide4.jpeg" alt="" />
+            <img src="./image/slide5.jpeg" alt="" />
+          </div>
 
-       </div>
+        </div>
       </section >
 
-  <section className='section9_blog'>
-    <div className='section9_blog_head'>
-      <div className='section9_blog_head_left'>
-        <p>MY BLOG</p>
-        <h3>Unlocking the potential of yourpersonal brand</h3>
-      </div>
-
-      <div className='section9_blog_head_right'>
-        <button>More Blog <i class="fa-solid fa-plus"></i></button>
-      </div>
-
-    </div>
-
-    <div className='section9_blog_cards'>
-      <div className='section9_blog_cards_card'>
-        <img src="https://zyan.vercel.app/images/blog/1.jpg" alt="" />
-
-        <div className='section9_blog_cards_card_text'>
-          <span>31 December,2022</span>
-
-          <div className='section9_blog_cards_card_text_ul' >
-          <ul>
-            <li><i class="fa-solid fa-circle-user"></i> By Admin</li>
-            <li><i class="fa-solid fa-comments"></i> Comments (05)</li>
-          </ul>
-          <p>The standard personal My <br /> portfolio</p>
+      <section className='section9_blog'>
+        <div className='section9_blog_head'>
+          <div className='section9_blog_head_left'>
+            <p>MY BLOG</p>
+            <h3>Unlocking the potential of yourpersonal brand</h3>
           </div>
-          
 
-        </div>
-      </div>
-
-      <div className='section9_blog_cards_card'>
-        <img src="https://zyan.vercel.app/images/blog/2.jpg" alt="" />
-
-        <div className='section9_blog_cards_card_text'>
-          <span>31 December,2022</span>
-          <div className='section9_blog_cards_card_text_ul' >
-          <ul>
-            <li><i class="fa-solid fa-circle-user"></i> By Admin</li>
-            <li><i class="fa-solid fa-comments"></i> Comments (05)</li>
-          </ul>
-          <p>The standard personal My <br /> portfolio</p>
+          <div className='section9_blog_head_right'>
+            <button>More Blog <i class="fa-solid fa-plus"></i></button>
           </div>
 
         </div>
-      </div>
 
-      <div className='section9_blog_cards_card'>
-        <img src="https://zyan.vercel.app/images/blog/3.jpg" alt="" />
+        <div className='section9_blog_cards'>
+          <div className='section9_blog_cards_card'>
+            <img src="https://zyan.vercel.app/images/blog/1.jpg" alt="" />
 
-        <div className='section9_blog_cards_card_text'>
-          <span>31 December,2022</span>
-          <div className='section9_blog_cards_card_text_ul' >
-          <ul>
-            <li><i class="fa-solid fa-circle-user"></i> By Admin</li>
-            <li><i class="fa-solid fa-comments"></i> Comments (05)</li>
-          </ul>
-          <p>The standard personal My <br /> portfolio</p>
+            <div className='section9_blog_cards_card_text'>
+              <span>31 December,2022</span>
+
+              <div className='section9_blog_cards_card_text_ul' >
+                <ul>
+                  <li><i class="fa-solid fa-circle-user"></i> By Admin</li>
+                  <li><i class="fa-solid fa-comments"></i> Comments (05)</li>
+                </ul>
+                <p>The standard personal My <br /> portfolio</p>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div className='section9_blog_cards_card'>
+            <img src="https://zyan.vercel.app/images/blog/2.jpg" alt="" />
+
+            <div className='section9_blog_cards_card_text'>
+              <span>31 December,2022</span>
+              <div className='section9_blog_cards_card_text_ul' >
+                <ul>
+                  <li><i class="fa-solid fa-circle-user"></i> By Admin</li>
+                  <li><i class="fa-solid fa-comments"></i> Comments (05)</li>
+                </ul>
+                <p>The standard personal My <br /> portfolio</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div className='section9_blog_cards_card'>
+            <img src="https://zyan.vercel.app/images/blog/3.jpg" alt="" />
+
+            <div className='section9_blog_cards_card_text'>
+              <span>31 December,2022</span>
+              <div className='section9_blog_cards_card_text_ul' >
+                <ul>
+                  <li><i class="fa-solid fa-circle-user"></i> By Admin</li>
+                  <li><i class="fa-solid fa-comments"></i> Comments (05)</li>
+                </ul>
+                <p>The standard personal My <br /> portfolio</p>
+              </div>
+
+            </div>
           </div>
 
         </div>
-      </div>
-
-    </div>
 
 
-  </section>
+      </section>
 
-  <section className='section10_subscribe'>
-    <div className='section10_subscribe_text'>
-      <h3>SUBSCRIBE MY NEWSLETTER</h3>
-    </div>
-
-    <div className='section10_subscribe_input' >
-      <input type="email" placeholder='Enter Your Email' />
-      <button>Notify Now</button>
-
-    </div>
-
-  </section>
+      <section className='section10_subscribe'>
+        <div className="section10_subscribe__box">
+          <div className='section10_subscribe_text'>
+            <h3>SUBSCRIBE MY NEWSLETTER</h3>
+          </div>
+          <div className='section10_subscribe_input' >
+            <input type="email" placeholder='Enter Your Email' />
+            <button>Notify Now</button>
+          </div>
+        </div>
+      </section>
 
     </div >
   )
 }
+
 
 export default Main_prtf

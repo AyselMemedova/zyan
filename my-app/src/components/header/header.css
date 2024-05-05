@@ -41,6 +41,18 @@
     list-style: none;
 }
 
+.headerLi:hover{
+    color: #55e6a5 !important;
+}
+
+.headerLiDrop{
+    color: black !important;
+}
+
+#basic-nav-dropdown:hover{
+    color: #55e6a5 !important;
+}
+
 .bar {
     background-color: #55e6a5;
     width: 80px;
