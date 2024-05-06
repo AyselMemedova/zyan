@@ -1,10 +1,11 @@
-.footer_all{
+.footer_all {
     background-color: #02050a;
     width: 100%;
     height: 400px;
     padding-top: 100px;
 }
-.footer_frst{
+
+.footer_frst {
     width: 100%;
     height: 105px;
     color: white;
@@ -14,7 +15,8 @@
     margin-bottom: 60px;
     padding: 10px 70px;
 }
-.footer_frst_card{
+
+.footer_frst_card {
     width: 33%;
     height: 100px;
     display: flex;
@@ -23,45 +25,46 @@
     font-family: "Poppins", sans-serif;
 }
 
-.footer_frst_card_text h4{
+.footer_frst_card_text h4 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
     color: white;
 }
 
-.footer_frst_card_text p{
+.footer_frst_card_text p {
     color: #a2a2a2;
     font-size: 16px;
     font-weight: 400;
     transition: 0.3s;
 }
-.footer_frst_card_text p:hover{
+
+.footer_frst_card_text p:hover {
     color: #55e6a5;
 }
 
-.footer_frst_card_icon{
+.footer_frst_card_icon {
     width: 100px;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background:#55e6a5;
+    background: #55e6a5;
     border-radius: 50%;
     padding: 20px;
     margin-right: 35px;
 }
 
-.footer_xett{
+.footer_xett {
     border: 0.5px solid #a2a2a2;
     width: 85%;
     margin: 20px 120px;
     margin-top: 80px;
 
-    
+
 }
 
-.footer_scnd{
+.footer_scnd {
     color: #a2a2a2;
     font-size: 16px;
     font-weight: 400;
@@ -73,10 +76,31 @@
     /* gap: 90px; */
 }
 
-.footer_scnd ul{
+.footer_scnd ul {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
     gap: 30px;
+}
+
+
+.scroll{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border: 1px solid #a2a2a2;
+
+}
+.scroll i{
+    color: #a2a2a2;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+justify-content: center;
+padding-top: 10px;
 }

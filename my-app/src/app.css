@@ -3,3 +3,9 @@
     margin: 0px;
     padding: 0px;
 }
+
+body{
+    width: 100%;
+    /* overflow: hidden; */
+    /* background-color: ; */
+}

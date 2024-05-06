@@ -1,20 +1,28 @@
 import React from 'react'
 import './main.css'
 import AutoPlayMethods from "./carousel";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 
 const Main_prtf = () => {
   return (
-    <div className='main_all_son'>
-      <div className='section2'>
+    <div className='main_all_son' >
+      <div className='section2' >
 
-        <div className='section2_text'>
+        <div className='section2_text'
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
           <p>My Services</p>
           <h3>Crafting stories through <br /> design and innovation</h3>
         </div>
 
         <div className='section2_cards'>
 
-          <div className='card'>
+          <div className='card' data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
             <span>
               <svg width="99" height="101" viewBox="0 0 99 101" fill="none" xmlns="http://www.w3.org/2000/svg" id="null" class="svg w-100 replaced-svg">
                 <path d="M76.0618 100.003H1.44788C0.675676 100.003 0 99.3278 0 98.5556V23.7487C0 22.9765 0.675676 22.3008 1.44788 22.3008H76.0618C76.834 22.3008 77.5097 22.9765 77.5097 23.7487V98.4591C77.5097 99.3278 76.834 100.003 76.0618 100.003ZM2.89575 97.1077H74.6139V25.1965H2.89575V97.1077Z" fill="#55E6A5"></path>
@@ -26,7 +34,9 @@ const Main_prtf = () => {
             <p>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui</p>
           </div>
 
-          <div className='card'>
+          <div className='card' data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
             <span>
               <svg width="127" height="100" viewBox="0 0 127 100" fill="none" xmlns="http://www.w3.org/2000/svg" id="null" class="svg w-100 replaced-svg">
                 <path d="M63.7291 99.9969C63.2929 99.9969 62.8568 99.7789 62.5296 99.4517L0.484306 33.699C-0.0609081 33.1537 -0.0609081 32.3904 0.26622 31.7362L16.2955 3.82122C16.6226 3.27601 17.1679 2.94888 17.7131 2.94888H26.2184C27.0907 2.94888 27.854 3.71218 27.854 4.58452C27.854 5.45686 27.0907 6.22016 26.2184 6.22016H18.6945L3.75559 32.2814L63.7291 95.9624L123.266 32.2814L106.583 6.11113H42.6839C41.8115 6.11113 41.0482 5.34783 41.0482 4.47549C41.0482 3.60314 41.8115 2.83984 42.6839 2.83984H107.346C107.891 2.83984 108.437 3.16697 108.764 3.60314L126.647 31.5181C127.083 32.1724 126.974 32.9356 126.429 33.4809L64.9286 99.3427C64.6015 99.8879 64.1653 99.9969 63.7291 99.9969Z" fill="#55E6A5"></path>
@@ -39,7 +49,9 @@ const Main_prtf = () => {
             <p>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui</p>
           </div>
 
-          <div className='card'>
+          <div className='card' data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
             <span>
               <svg width="117" height="100" viewBox="0 0 117 100" fill="none" xmlns="http://www.w3.org/2000/svg" id="null" class="svg w-100 replaced-svg">
                 <path d="M74.2104 51.7634C73.8691 51.7634 73.414 51.6496 73.0727 51.4221C72.3902 50.8533 72.2764 49.7156 72.8452 49.033L110.502 3.52674H5.38219L43.0386 49.033C43.6074 49.7156 43.4937 50.8533 42.8111 51.4221C42.1285 51.9909 40.9908 51.8771 40.422 51.1945L0.490267 2.84414C0.0352047 2.38908 0.0352049 1.59271 0.262736 1.02388C0.490268 0.455056 1.17286 0 1.85546 0H114.37C115.052 0 115.621 0.34129 115.962 1.02388C116.19 1.59271 116.19 2.27531 115.735 2.84414L75.6894 51.0808C75.2343 51.5358 74.7792 51.7634 74.2104 51.7634Z" fill="#55E6A5"></path>
@@ -54,11 +66,9 @@ const Main_prtf = () => {
           </div>
 
         </div>
-
-
       </div>
 
-      <div className='section3'>
+      <div className='section3' >
         <div className='section3_all'>
           <div className='section3_left'>
             <div className='section3_left_text'>
@@ -75,20 +85,22 @@ const Main_prtf = () => {
             <button className='dwnload'>Download CV <i class="fa-solid fa-download"></i></button>
           </div>
 
-          <div className='section3_right'>
+          <div className='section3_right' data-aos="flip-right">
             <img src="https://zyan.vercel.app/images/about_img.jpg" alt="" />
+            <div className='div'>
+              <div className='section3_right_text'>
+                <div className='section3_right_text_i'>
+                  <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <div className='section3_right_text_text'>
+                  <h4>Daily Activity</h4>
+                  <p>Loream is ispam</p>
+                </div>
 
-            <div className='section3_right_text'>
-              <div className='section3_right_text_i'>
-                <i class="fa-solid fa-chart-pie"></i>
+
               </div>
-              <div className='section3_right_text_text'>
-                <h4>Daily Activity</h4>
-                <p>Loream is ispam</p>
-              </div>
-
-
             </div>
+
 
           </div>
         </div>
@@ -98,7 +110,11 @@ const Main_prtf = () => {
       </div>
 
       <section className='section4_design'>
-        <div className='section4_design_left'>
+
+        <div className='section4_design_left' data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+
           <div className='section4_design_left_text'>
             <h2>Design <span>and Innovation</span></h2>
             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione voluptatem sequi nesciuNeque porro quisquam est, oursqui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</p>
@@ -149,7 +165,7 @@ const Main_prtf = () => {
 
         </div>
 
-        <div className='section4_design_right' >
+        <div className='section4_design_right' data-aos="zoom-in-up">
           <h3>GET TOUCH ME?</h3>
           <p>For your car we will do everything advice design in us repairs and maintenance We are the some preferred.</p>
           <input type="text" placeholder='Your Name' />
@@ -160,8 +176,8 @@ const Main_prtf = () => {
         </div>
       </section>
 
-      <section className='section5_education'>
-        <div className='section5_education_head'>
+      <section className='section5_education' >
+        <div className='section5_education_head' data-aos="fade-up">
           <p>EDUCATION & SKILL</p>
           <h3>Showcasing your talent <br /> amplifying your impact</h3>
         </div>
@@ -194,41 +210,41 @@ const Main_prtf = () => {
         </div >
 
         <div className='section5_education_bars'>
-          <div className='section5_education_bars_elemnt' >
+          <div className='section5_education_bars_elemnt' data-aos="fade-right" >
             <p>HTML</p>
-            <div></div>
+            <div data-aos="fade-right"></div>
           </div>
 
-          <div className='section5_education_bars_elemnt' >
+          <div className='section5_education_bars_elemnt' data-aos="fade-right" >
             <p>Python</p>
-            <div></div>
+            <div data-aos="fade-right"></div>
           </div>
 
-          <div className='section5_education_bars_elemnt' >
+          <div className='section5_education_bars_elemnt' data-aos="fade-right">
             <p>Css</p>
-            <div></div>
+            <div data-aos="fade-right"></div>
           </div>
 
-          <div className='section5_education_bars_elemnt' >
+          <div className='section5_education_bars_elemnt' data-aos="fade-right">
             <p>Photoshop</p>
-            <div></div>
+            <div data-aos="fade-right"></div>
           </div>
 
-          <div className='section5_education_bars_elemnt' >
+          <div className='section5_education_bars_elemnt' data-aos="fade-right" >
             <p>Javascript</p>
-            <div></div>
+            <div data-aos="fade-right"></div>
           </div>
 
-          <div className='section5_education_bars_elemnt' >
+          <div className='section5_education_bars_elemnt' data-aos="fade-right" >
             <p>Figma</p>
-            <div></div>
+            <div data-aos="fade-right"></div>
           </div>
 
         </div>
       </section>
 
-      <section className='section6_elevate'>
-        <div className='section6_elevate_txt'>
+      <section className='section6_elevate' >
+        <div className='section6_elevate_txt' data-aos="fade-up">
           <p>MY RECENT PORTFOLIO</p>
           <h3>Elevate your brand to new <br />heights with our portfolio expertise</h3>
         </div>
@@ -258,19 +274,19 @@ const Main_prtf = () => {
 
       </section>
 
-      <section className='section7_clients'>
-        <div className='section7_clients_txt'>
+      <section className='section7_clients' >
+        <div className='section7_clients_txt' >
           <p>CLIENTS REVIEW</p>
           <h3>My testomonial</h3>
         </div>
-          <div className="conatinerForSlider">
+        <div className="conatinerForSlider">
 
-          <AutoPlayMethods/>
-          </div>
+          <AutoPlayMethods />
+        </div>
 
       </section>
 
-      <section className='section8_carousel'>
+      <section className='section8_carousel' >
         <div className="logos">
           <div className="logo_items">
             <img src="./image/slide1.jpeg" alt="" />
@@ -313,7 +329,7 @@ const Main_prtf = () => {
         </div>
       </section >
 
-      <section className='section9_blog'>
+      <section className='section9_blog' >
         <div className='section9_blog_head'>
           <div className='section9_blog_head_left'>
             <p>MY BLOG</p>
@@ -327,7 +343,9 @@ const Main_prtf = () => {
         </div>
 
         <div className='section9_blog_cards'>
-          <div className='section9_blog_cards_card'>
+          <div className='section9_blog_cards_card' data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" >
             <img src="https://zyan.vercel.app/images/blog/1.jpg" alt="" />
 
             <div className='section9_blog_cards_card_text'>
@@ -345,7 +363,9 @@ const Main_prtf = () => {
             </div>
           </div>
 
-          <div className='section9_blog_cards_card'>
+          <div className='section9_blog_cards_card' data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
             <img src="https://zyan.vercel.app/images/blog/2.jpg" alt="" />
 
             <div className='section9_blog_cards_card_text'>
@@ -361,7 +381,9 @@ const Main_prtf = () => {
             </div>
           </div>
 
-          <div className='section9_blog_cards_card'>
+          <div className='section9_blog_cards_card' data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
             <img src="https://zyan.vercel.app/images/blog/3.jpg" alt="" />
 
             <div className='section9_blog_cards_card_text'>
@@ -382,9 +404,10 @@ const Main_prtf = () => {
 
       </section>
 
-      <section className='section10_subscribe'>
+      <section className='section10_subscribe' >
         <div className="section10_subscribe__box">
-          <div className='section10_subscribe_text'>
+          <div className='section10_subscribe_text' data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
             <h3>SUBSCRIBE MY NEWSLETTER</h3>
           </div>
           <div className='section10_subscribe_input' >

@@ -6,13 +6,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-// import { useState } from 'react';
-// import Button from 'react-bootstrap/Button';
-// import Offcanvas from 'react-bootstrap/Offcanvas';
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
+
+
 
 const Header_prtf = () => {
     return (
-        <div className="header_and__firstSection">
+        <div className="header_and__firstSection" id='top'>
             <div className='header_all'>
                 <div className='logo'>
                     <img src="https://zyan.vercel.app/images/logo.png" alt="" />
@@ -24,30 +27,27 @@ const Header_prtf = () => {
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="me-auto " >
                                     <NavDropdown title="home" id="basic-nav-dropdown" className="headerLi">
-                                        <NavDropdown.Item className="headerLiDrop" href="#action/3.1">Action</NavDropdown.Item>
+                                        <NavDropdown.Item className="headerLiDrop" href="#action/3.1">Home1</NavDropdown.Item>
                                         <NavDropdown.Item className="headerLiDrop" href="#action/3.2">
-                                            Another action
+                                            Home2
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item className="headerLiDrop" href="#action/3.3">Something</NavDropdown.Item>
+                                        <NavDropdown.Item className="headerLiDrop" href="#action/3.3">Home3</NavDropdown.Item>
+                                        <NavDropdown.Item className="headerLiDrop" href="#action/3.3">Home4</NavDropdown.Item>
+                                        <NavDropdown.Item className="headerLiDrop" href="#action/3.3">Home RL</NavDropdown.Item>
+
                                         <NavDropdown.Divider />
-                                        <NavDropdown.Item className="headerLiDrop" href="#action/3.4">
-                                            Separated link
-                                        </NavDropdown.Item>
+                                       
                                     </NavDropdown>
                                     <Nav.Link className='headerLi' href="#link">About Us</Nav.Link>
                                     <Nav.Link className='headerLi' href="#link">Services</Nav.Link>
                                     <Nav.Link className='headerLi' href="#link">Project</Nav.Link>
 
                                     <NavDropdown title="Blog" id="basic-nav-dropdown">
-                                        <NavDropdown.Item className="headerLiDrop"  href="#action/3.1" >Project</NavDropdown.Item>
+                                        <NavDropdown.Item className="headerLiDrop" href="#action/3.1" >Blog Details</NavDropdown.Item>
                                         <NavDropdown.Item className="headerLiDrop" href="#action/3.2">
-                                            Another action
+                                        Blog List
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item className="headerLiDrop"href="#action/3.3">Blog</NavDropdown.Item>
-                                        <NavDropdown.Divider />
-                                        <NavDropdown.Item className="headerLiDrop" href="#action/3.4">
-                                            Separated link
-                                        </NavDropdown.Item>
+                                     
                                     </NavDropdown>
                                     <Nav.Link className='headerLi' href="#link">Contact</Nav.Link>
 
@@ -102,10 +102,10 @@ const Header_prtf = () => {
                 </div> */}
 
                 </div>
-                <div className='bar'>
+                <div className='bar '>
                     <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
 
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas offcanvas-end cssOfcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header">
                             <h5 id="offcanvasRightLabel"><img src="https://zyan.vercel.app/images/logo2.png" alt="" /></h5>
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
@@ -134,27 +134,28 @@ const Header_prtf = () => {
 
             </div>
             <div className='section1'>
-        <div className='main_left'>
-          <h2>HI, I'M ZYAN! <br /> CREATIVE DESIGNERCODER</h2>
-          <p>I'm a passionate UI/UX designer with a mission to create delightful and intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.</p>
-          <div className='main_left_btn'>
+                <div className='main_left'>
+                    <h2>HI, I'M ZYAN!  <br />CREATIVE <span style={{ color: '#55e6a5' }} >DESIGNER</span></h2>
+                    <p>I'm a passionate UI/UX designer with a mission to create delightful and intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.</p>
+                    <div className='main_left_btn'>
 
-            <button className='dwnload'>Download CV <i class="fa-solid fa-download"></i></button>
+                        <button className='dwnload'>Download CV <i class="fa-solid fa-download"></i></button>
 
-            <button className='video'>
-              <div className='video_btn'>
-                <i class="fa-solid fa-play"></i>
+                        <button className='video'>
+                            <div className='video_btn'>
+                                <i class="fa-solid fa-play"></i>
 
-              </div>
-              Watch Video    </button>
-          </div>
+                            </div>
+                            Watch Video    </button>
+                    </div>
 
-        </div>
+                </div>
 
-        <div className='main_right'>
-          {/* <img src="https://zyan.vercel.app/images/shapes/banner_shape.png" alt="" /> */}
-          <img src="https://zyan.vercel.app/images/banner_img_1.png" alt="" />
-        </div>
+                <div className='main_right'>
+                    <div className='main_right_img'>
+                        <img src="https://zyan.vercel.app/images/banner_img_1.png" alt="" />
+                    </div>
+                </div>
             </div>
         </div>
 

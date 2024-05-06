@@ -10,6 +10,8 @@
     margin: 0 auto;
     position: sticky;
    top: 0;
+   font-family: "Poppins", sans-serif;
+
     
     /* transform: translateX(13%); */
 
@@ -131,4 +133,6 @@
 .dropdown_home{
     background-color: #02050A;
 }
-
+.headerLiDrop:hover{
+    background-color: #55e6a5;
+}
